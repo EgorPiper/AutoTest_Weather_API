@@ -3,7 +3,7 @@ import requests
 import json
 from jsonpath_ng import jsonpath, parse
 
-json_body = '{"coord":{"lon":37.62,"lat":55.75},"weather":[{"id":802,"main":"Clouds","description":"переменная облачность","icon":"03d"}],"base":"stations","main":{"temp":16,"feels_like":15.07,"temp_min":15,"temp_max":16.67,"pressure":1024,"humidity":63},"visibility":10000,"wind":{"speed":1},"clouds":{"all":40},"dt":1590569557,"sys":{"type":1,"id":9029,"country":"RU","sunrise":1590541131,"sunset":1590602094},"timezone":10800,"id":524901,"name":"Москва","cod":200}'
+#json_body = '{"coord":{"lon":37.62,"lat":55.75},"weather":[{"id":802,"main":"Clouds","description":"переменная облачность","icon":"03d"}],"base":"stations","main":{"temp":16,"feels_like":15.07,"temp_min":15,"temp_max":16.67,"pressure":1024,"humidity":63},"visibility":10000,"wind":{"speed":1},"clouds":{"all":40},"dt":1590569557,"sys":{"type":1,"id":9029,"country":"RU","sunrise":1590541131,"sunset":1590602094},"timezone":10800,"id":524901,"name":"Москва","cod":200}'
 link = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=68d9c6557101f408224e83aa3c323c11"
 response = requests.get(link)
 class TestWeather():
